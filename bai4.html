@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai4</title>
+</head>
+<body>
+<script>
+    let x = [1,2,3,4,5,6,7,8,9,10];
+    let fisrt =0;
+    let last = x.length-1;
+    let b = 0;
+    let i;
+    while (fisrt < last){
+        b = x[fisrt];
+        x[fisrt]=x[last];
+        x[last]=b;
+        fisrt++;
+        last--;
+    }
+    document.write(x);
+</script>
+</body>
+</html>
