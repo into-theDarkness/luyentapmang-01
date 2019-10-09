@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai6</title>
+</head>
+<body>
+<script>
+    var x = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,"ga"];
+    var i;
+    function kiemtra() {
+        for (i = 0; i < x.length;i++){
+            if (Number.isNaN(x[i]))
+                return false;
+        }
+        return true;
+    }
+    if (kiemtra() === true){
+        document.write("day k la mang so nguyen");
+    } else {
+        document.write("day la mang so nguyen");
+    }
+</script>
+</body>
+</html>
