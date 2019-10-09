@@ -6,19 +6,19 @@
 </head>
 <body>
 <script>
-    var x = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,"ga"];
+    var x = [1,2,3,4,5,6,7,8,9,10,11,'dfdfd',12,13,14,15,];
     var i;
     function kiemtra() {
-        for (i = 0; i < x.length;i++){
-            if (Number.isNaN(x[i]))
+        for (i = 0; i < x.length; i++) {
+            if (isNaN(x[i])==true) {
                 return false;
-        }
-        return true;
+            }
+        } return true;
     }
-    if (kiemtra() === true){
-        document.write("day k la mang so nguyen");
+    if (kiemtra()== true){
+        document.write("trong day toan la so nguyen");
     } else {
-        document.write("day la mang so nguyen");
+        document.write("trong day co phan tu chuoi")
     }
 </script>
 </body>
