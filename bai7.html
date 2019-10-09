@@ -3,14 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <title>bai7</title>
-    <style>
-    body {padding-top:50px}
-    </style>
 </head>
 <body>
-<input type="text" id="txtValue"></input>
-<input type="button" id="btnAdd" value="Add" onclick="add_element_to_array();"></input>
-<input type="button" id="btnDisplay" value="Display" onclick="display_array();"></input>
-<div id="result"></div>
+<script>
+    let x = [1,2,3,4,5,6,7,8,9,10,11,12,13];
+    let i;
+    let  a  = parseInt(prompt("Enter the number"));
+    let k = x.indexOf(a);
+    if (k != -1){
+        for (i =k; i< x.length;i++){
+            x[i] = x[i+1];
+        }
+        x[x.length-1]= 0;
+        document.write(x);
+    }
+
+
+
+
+</script>
 </body>
 </html>
